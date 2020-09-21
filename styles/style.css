@@ -1,0 +1,251 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: rgb(20, 20, 20);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/*-----------------*/
+/*----- Menu ----*/
+/*----------------*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+.menu ul{
+    list-style-type:none ;
+}
+.menu .mid-menu{
+    width: 350px;
+    text-align: center;
+    margin-left: -20px;
+}
+.menu .accounts{
+    width: 120px;
+    text-align: center;
+}
+
+.menu a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.menu a:hover{
+    background: chocolate;
+}
+
+/*-----------------*/
+/*----- Search ----*/
+/*----------------*/
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.search input{
+    width: 80%;
+    font-size: 25px;
+    padding: 10px;
+}
+.search button{
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 5px;
+    box-shadow: none;
+}
+/*-----------------*/
+/*----- Jobs ----*/
+/*----------------*/
+main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+main .jobs{
+    margin: 20px 0px;
+    width: 80%;
+    border-top: solid 1px #fff;
+    color: white;
+}
+main .jobs .job{
+    background-color: rgb(29, 28, 28);
+    padding: 10px;
+    margin: 10px 0px;
+    border-left:dashed 1px;
+    border-right: dashed 1px;
+}
+main .jobs .job button{
+    display: block;
+}
+/*---------------------*/
+/*----- Pagination ----*/
+/*---------------------*/
+.pagination{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pagination .pagination-list{
+    width: 500px;
+    height: 40px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+.pagination-list li{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+/*---------------------*/
+/*----- company's ----*/
+/*---------------------*/
+.container{
+    width: 95%;
+    border-left: dashed 1px #fff;
+    border-right: dashed 1px #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.container .company{
+    width: 350px;
+    background-color: rgb(44, 44, 44);
+    padding: 10px;
+    margin: 10px;
+}
+.company .image{
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+}
+.info{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+}
+.info .leftside{
+    width: 50%;
+}
+.info .rightside{
+    width: 50%;
+}
+/*---------------------*/
+/*----- cotegorys ----*/
+/*---------------------*/
+.categorys{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.categorys .category{
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    text-align: center;
+}
+@media only screen and (max-width:700px){
+    .categorys{
+        justify-content: center;
+    }
+    .categorys .category{
+        width: 80%;
+    }
+}
+/*--------------------------*/
+/*----- the job page----*/
+/*--------------------------*/
+.exit{
+    position: absolute;
+    top:20px;
+    left: 20px;
+    width: 100px;
+    background-color: rgb(41, 43, 41);
+    border-radius: 10px;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+.exit p{
+    color: white;
+    text-align: center;
+}
+.area{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.question-container{
+    width: 700px;
+    background-color: rgb(56, 56, 56);
+    padding: 30px 0px;
+    position: relative;
+
+}
+.question-container .question{
+    text-align: center;
+}
+.question-container .question p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin: 15px 0px;
+}
+.question-container .answers{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.question-container .answers .answer{
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.points,.lifes{
+    text-align: center;
+    font-size: 25px;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    line-height: 0px;
+    border-radius: 30px;
+    padding: 5px;
+    top: -40px;
+}
+.points{
+    right: 0px;
+}
+.lifes{
+    left: 0px;
+}
+
+@media only screen and (max-width:700px){
+    .question-container .answers{
+        justify-content: center;
+    }
+    .question-container .answers .answer{
+        width: 80%;
+    }
+}
